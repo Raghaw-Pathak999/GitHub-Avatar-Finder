@@ -1,0 +1,269 @@
+/* App.css */
+
+body {
+  background-color: #105d4b;
+}
+
+.App {
+  background-image: linear-gradient(145deg, #3c3c64, grey);
+  text-align: center;
+  width: 600px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 20px 40px;
+  margin-top: 2%;
+  box-shadow: -1px -1px 2px 2.5px black;
+
+  animation: fadeInFromTop ease 2s;
+  -webkit-animation: fadeInFromTop ease 2s;
+  -moz-animation: fadeInFromTop ease 2s;
+  -o-animation: fadeInFromTop ease 2s;
+  -ms-animation: fadeInFromTop ease 2s;
+}
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-ms-keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[type="text"] {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1b1b1b;
+  box-shadow: 2px 2px 5px rgb(249, 249, 249);
+  outline: none;
+  padding: 15px 90px;
+  font-family: cursive;
+  color: white;
+  text-transform: capitalize;
+}
+
+input::placeholder {
+  color: white;
+  font-family: cursive;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #5d8ec2;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 5px #0000007c;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px #dddbdb;
+}
+
+button:hover {
+  background-color: #165152;
+  scale: 1.1;
+  color: white;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  box-shadow: 1px 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.counts {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+}
+
+.counts p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.counts p>span {
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: 1px 2px 6px #ffffff;
+}
+
+@media only screen and (max-width: 740px) {
+  .App {
+    width: 70%;
+    margin: auto;
+    height: 700px;
+  }
+
+  input[type="text"] {
+    width: 120px;
+    font-size: 10px;
+    display: flex;
+    margin-left: -20px;
+  }
+
+  input::placeholder {
+    color: white;
+    font-size: 10px;
+    font-family: cursive;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 380px) {
+  .App {
+    width: 70%;
+    margin: auto;
+    height: 700px;
+  }
+
+  input[type="text"] {
+    width: 70px;
+    font-size: 8px;
+    display: flex;
+    margin-left: -30px;
+  }
+
+  input::placeholder {
+    color: white;
+    font-size: 8px;
+    font-family: cursive;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    box-shadow: 1px 2px 2px 4px #000000a3;
+    margin-top: 30px;
+  }
+
+  .counts p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 400px){
+  .App {
+    width: 70%;
+    margin: auto;
+    height: 650px;
+  }
+
+  input[type="text"] {
+    width: 110px;
+    font-size: 8px;
+    display: flex;
+    margin-left: -30px;
+  }
+
+  input::placeholder {
+    color: white;
+    font-size: 8px;
+    font-family: cursive;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    box-shadow: 1px 2px 2px 4px #000000a3;
+    margin-top: 30px;
+  }
+
+  .counts p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
